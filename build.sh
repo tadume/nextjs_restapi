@@ -12,4 +12,5 @@ python manage.py collectstatic --noinput
 # 本番環境のDBにmigrationファイルの設定を反映
 python manage.py migrate
 # 本番環境用の管理ユーザーを作成
-python manage.py createsuperuser --username admin --email admin@test.com --noinput
+# 2回目以降のデプロイでは不要のため、コメントアウト
+# python manage.py createsuperuser --username admin --email admin@test.com --noinput
